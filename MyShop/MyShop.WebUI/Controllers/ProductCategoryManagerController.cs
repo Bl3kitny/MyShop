@@ -9,6 +9,7 @@ using MyShop.DataAccess.InMemory;
 
 namespace MyShop.WebUI.Controllers
 {
+    [Authorize(Roles = "ADMIN")]
     public class ProductCategoryManagerController : Controller
     {
        
